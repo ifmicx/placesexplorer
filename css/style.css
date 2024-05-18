@@ -277,6 +277,26 @@ nav {
     background: cover;
     background: url(../img/logowhite.png);
   }
+
+  .footer::after{
+    background-color:white;  
+  }
+
+  .prev, .next{
+    color:white;
+  }
+
+  .dot {
+    background-color: var(--primary500); 
+  }
+  
+  .dot.active {
+    background-color:  white;
+  }
+
+  #email{
+    color:white
+  }
 }
 
 #dark-switch{
