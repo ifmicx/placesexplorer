@@ -1,0 +1,90 @@
+<!-- 
+  problemi
+- slideshow automatica non va
+- dark mode non rimane attiva in tutti i siti (sessioni in js non vanno)
+- dark mode incompleta
+- provare a fare unico div che stampa tutte le immagini in modo dinamico da js nella slideshow dell'index
+- possibile casella di ricerca per cercare luoghi (database che memorizza nomeluogo) usando ajax
+-->
+
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/darkmode.js"></script>
+    <script src="js/slideshow.js"></script>
+    <title>PlacesExplorer | Home</title>
+
+  </head>
+  <body onload="cambioImg(1,4)">
+    <div class="safe-area spaced-column">
+      <nav>
+        <div class="logo"><img src="img/logo.png" alt="Home" width="200" height="66"></div>
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <button id="dark-switch" onclick="darkmode()">🌙</button>
+          <a class="menu-item active" href="./index.html">Home</a>
+          <a class="menu-item" href="./pages/about.html">Su di me</a>
+          <a class="menu-item" href="./pages/places.html">Posti</a>
+          <a class="menu-item" href="./pages/contacts.html">Contatti</a>
+        </div>
+      </nav>
+
+      <br>
+      <div class="text"><h3>Luoghi in evidenza</h3></div>
+      <div class="content">
+        <div class="slide-container">
+          <div class="slide-image" id="1">
+            <a href="pages/places.html"><img class="sl-image" src="./img/slideshow/1.jpg" style="width:100%"></a>
+            <div class="text"><h3>Brescia</h3></div>
+          </div>
+      
+          <div class="slide-image" id="2">
+            <a href="pages/places.html"><img class="sl-image" src="./img/slideshow/2.jpg" style="width:100%"></a>
+            <div class="text"><h3>Milano</h3></div>
+          </div>
+      
+          <div class="slide-image" id="3">
+            <a href="pages/places.html"><img class="sl-image" src="./img/slideshow/3.jpg" style="width:100%"></a>
+            <div class="text"><h3>Roma</h3></div>
+          </div>
+
+          <div class="slide-image" id="4">
+            <a href="pages/places.html"><img class="sl-image" src="./img/slideshow/4.jpg" style="width:100%"></a>
+            <div class="text"><h3>Napoli</h3></div>
+          </div>
+
+          <br>
+          <br>
+
+          <div style="text-align:center">
+            <span><a class="prev" onclick="cambioImg(-1,4)">❮</a></span>
+            <span class="dot" onclick="cambioDot(1,4)"></span> 
+            <span class="dot" onclick="cambioDot(2,4)"></span> 
+            <span class="dot" onclick="cambioDot(3,4)"></span>
+            <span class="dot" onclick="cambioDot(4,4)"></span>
+            <span><a class="next" onclick="cambioImg(1,4)">❯</a></span>
+          </div>
+      
+        </div>
+
+        <br>
+        <br>
+
+        <h1 id="h1index">La bellezza della scoperta</h1>
+      </div>
+      
+      <div class="footer">© 2024 Places Explorer</div>
+    </div>
+  </body>
+</html>
