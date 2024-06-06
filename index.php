@@ -5,6 +5,7 @@
 - dark mode incompleta
 - provare a fare unico div che stampa tutte le immagini in modo dinamico da js nella slideshow dell'index
 - possibile casella di ricerca per cercare luoghi (database che memorizza nomeluogo) usando ajax
+- usare pagina php o js per stampare header e footer
 -->
 
 
@@ -27,19 +28,10 @@
   </head>
   <body onload="cambioImg(1,4)">
     <div class="safe-area spaced-column">
-      <nav>
-        <div class="logo"><img src="img/logo.png" alt="Home" width="200" height="66"></div>
-        <input type="checkbox" class="toggler" />
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-          <button id="dark-switch" onclick="darkmode()">🌙</button>
-          <a class="menu-item active" href="./index.html">Home</a>
-          <a class="menu-item" href="./pages/about.html">Su di me</a>
-          <a class="menu-item" href="./pages/places.html">Posti</a>
-          <a class="menu-item" href="./pages/contacts.html">Contatti</a>
-        </div>
-      </nav>
-
+      <?php
+          require('header.php');
+          stampaHeader();
+      ?>
       <br>
       <div class="text"><h3>Luoghi in evidenza</h3></div>
       <div class="content">
