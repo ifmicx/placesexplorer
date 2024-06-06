@@ -4,4 +4,4 @@ problemi
 - dark mode incompleta
 - provare a fare unico div che stampa tutte le immagini in modo dinamico da js nella slideshow dell'index
 - possibile casella di ricerca per cercare luoghi (database che memorizza nomeluogo) usando ajax
-- usare pagina php o js per stampare header e footer
+- usare pagina php o js per stampare header e footer ✅
