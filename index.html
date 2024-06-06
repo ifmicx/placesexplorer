@@ -1,14 +1,3 @@
-<!-- 
-  problemi
-- slideshow automatica non va
-- dark mode non rimane attiva in tutti i siti (sessioni in js non vanno)
-- dark mode incompleta
-- provare a fare unico div che stampa tutte le immagini in modo dinamico da js nella slideshow dell'index
-- possibile casella di ricerca per cercare luoghi (database che memorizza nomeluogo) usando ajax
-- usare pagina php o js per stampare header e footer
--->
-
-
 <!DOCTYPE html>
 <html lang="it">
   <head>
@@ -23,15 +12,18 @@
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/darkmode.js"></script>
     <script src="js/slideshow.js"></script>
+    <script src="js/header.js"></script>
     <title>PlacesExplorer | Home</title>
 
   </head>
   <body onload="cambioImg(1,4)">
     <div class="safe-area spaced-column">
-      <?php
-          require('header.php');
-          stampaHeader();
-      ?>
+
+      <script>stampaHeader();</script>
+      <div id="header">
+      
+      </div>
+
       <br>
       <div class="text"><h3>Luoghi in evidenza</h3></div>
       <div class="content">
