@@ -85,9 +85,9 @@ nav {
   align-items: center;
 }
 
+/* regola usata per indicare nella navbar la pagina attualmente visualizzata */
 .active {
   font-weight: bold;
-  /* color: red; */
 }
 
 .safe-area {
