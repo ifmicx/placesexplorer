@@ -272,11 +272,11 @@ nav {
     color: white;
   }
 
-  /*non cambia immagine correttamente*/
+  /*non cambia immagine correttamente
   .logo img{
     background: cover;
     background: url(../img/logowhite.png);
-  }
+  }*/
 
   .footer::after{
     background-color:white;  

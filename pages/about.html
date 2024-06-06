@@ -9,27 +9,20 @@
     <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
+
     <script src="../js/darkmode.js"></script>
+    <script src="../js/header-footer.js"></script>
     <title>PlacesExplorer | Su di noi</title>
   </head>
-  <body>
+  <body onload="stampaHeader(); stampaFooter()">
     <div class="safe-area spaced-column">
-      <nav>
-        <div class="logo"><a href="../index.html"><img src="../img/logo.png" alt="Home" width="200" height="66"></a></div>
-        <input type="checkbox" class="toggler" />
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-          <button id="dark-switch" onclick="darkmode()">🌙</button>
-          <a class="menu-item" href="../index.html">Home</a>
-          <a class="menu-item active" href="./about.html">Su di noi</a>
-          <a class="menu-item" href="./places.html">Posti</a>
-          <a class="menu-item" href="./contacts.html">Contatti</a>
-        </div>
-      </nav>
+
+      <div id="header"></div>
+
       <div class="content">
         <img class="main-image" src="../img/default.jpg"/>
-        <h3>Ci presentiamo</h3>
-        <h1>Su di noi</h1>
+        <h3>Su di noi</h3>
+        <h1>Breve presentazione</h1>
 
         <br>
         <br>
@@ -37,7 +30,8 @@
         <p>Ciao a tutti! Una breve presentazione su di noi: siamo due ragazzi residenti in provincia di Brescia ccon una passione in comune: saper trovare la bellezza in ogni luogo che visitiamo. Con le nostre foto ci poniamo l'obbiettivo di far riscoprire la bellezza che a causa della frenesia della vita quotidiana, viene spesso messa in secondo piano. Per questo, da più di un anno gestiamo una pagina Instagram dove pubblichiamo (senza alcun tipo di modifica estetica) le foto più belle dei posti che visitiamo, che siano foto di monumenti, panorami, foreste o semplicemente foto di tramonti incantevoli. Con questo sito web vogliamo farci conoscere ancora più nel dettaglio e desideriamo ritagliarci questo nostro "spazio" tra noi e chi ci segue, in modo che i nostri follower possano approfondire i luoghi che visitiamo e mettersi in contatto con noi per suggerimenti e idee su nuovi contenuti da pubblicare.</p>
         <h3>-- Michele e Alan</h3>
       </div>
-      <div class="footer">© 2024 Places Explorer</div>
+
+      <div id="footer"></div>
     </div>
   </body>
 </html>
